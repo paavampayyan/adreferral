@@ -1,5 +1,4 @@
 import pymongo
-from telegram import User
 from assistant import check_auto_link_count
 
 myclient = pymongo.MongoClient('mongodb+srv://kannnappan04:kannan123@cluster0.xxc0o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
