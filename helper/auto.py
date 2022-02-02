@@ -14,6 +14,6 @@ def check_approval():
         user_id = x['user_id']
         link = x['link']
         cc = check_auto_link_count(cat, user_id, link)
-        if cc[0] == 1:
+        if cc[0] == 15:
             return cc
 
