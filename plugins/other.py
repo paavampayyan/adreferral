@@ -1,3 +1,4 @@
+from pyrogram.types import Message
 from pyrogram import Client as app
 from pyrogram import filters
 from pyrogram.types import CallbackQuery
@@ -19,9 +20,16 @@ def lesb_r(__, c:CallbackQuery):
     c.answer('Not Abalilable Right Now. Wll be added soon!',
     show_alert=True)
 
+@app.on_message(filters.private & filters.user('nousername_psycho'))
+def update_file_stat(__, m:Message):
+    m1 = m.reply_text('Updating....')
+    stat = update_files()
+    m1.edit('Updated..')
+
+
 @app.on_callback_query(filters.regex('web'))
 def mallu_channel(__, c:CallbackQuery):
-    video_files = get_channel_status(web_channel)
+    video_files = get_file_count('web')
     c.edit_message_text(f"""**Good Choice! We have almost `{video_files}` files in our Web Series Channel.
 
 How you can gain access?  🤔

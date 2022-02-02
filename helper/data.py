@@ -1,6 +1,9 @@
 
 import pymongo
+from assistant import get_channel_status
 
+web_channel = -1001560868604
+m_channel =  -1001697877778
 
 myclient = pymongo.MongoClient('mongodb+srv://kannnappan04:kannan123@cluster0.xxc0o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 
@@ -8,6 +11,7 @@ db = myclient['bot_data']
 user_details = db['user_details']
 links = db['links']
 vip = db['vips']
+files = db['files']
 
 
 def add_user(user_name, user_id):
@@ -55,3 +59,18 @@ def check_vip(cat, user_id):
 
 def add_vip(user_id, cat, link):
     vip.insert_one({'user_id': user_id, 'cat': cat, 'link':link})
+
+def update_files():
+    web_files = get_channel_status(web_channel)
+    mallu_files = get_channel_status(m_channel)
+    old = {'title': 'filestatus'}
+    new = {"$set": {'title': 'filestatus', 'web':web_files, 'mallu': mallu_files}}
+    files.update_one(old, new)
+
+def get_file_count(cat):
+    if cat == 'web':
+        res = files.find_one({'title': 'filestatus'})
+        return res['web']
+    if cat == 'mallu':
+        res = files.find_one({'title': 'filestatus'})
+        return res['mallu']

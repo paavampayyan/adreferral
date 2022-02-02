@@ -62,7 +62,7 @@ def disagree(__, c:CallbackQuery):
 
 @app.on_callback_query(filters.regex('mallu'))
 def mallu_channel(__, c:CallbackQuery):
-    video_files = get_channel_status(m_channel)
+    video_files = get_file_count('mallu')
     c.edit_message_text(f"""**Good Choice! We have almost `{video_files}` Indian Videos in our Channel.
 
 How you can gain access?  🤔
