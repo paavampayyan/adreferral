@@ -20,11 +20,7 @@ def lesb_r(__, c:CallbackQuery):
     c.answer('Not Abalilable Right Now. Wll be added soon!',
     show_alert=True)
 
-@app.on_message(filters.command('update') & filters.private & filters.user('nousername_psycho'))
-def update_file_stat(__, m:Message):
-    m1 = m.reply_text('Updating....')
-    stat = update_files()
-    m1.edit('Updated..')
+
 
 
 @app.on_callback_query(filters.regex('web'))

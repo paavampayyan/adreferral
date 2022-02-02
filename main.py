@@ -117,6 +117,8 @@ def link_count(__, c:CallbackQuery):
 
 def auto_check():
     result = check_approval()
+    if result == None:
+        return
     cat =  result[1]
     user_id = result[2]
     if cat == 'mallu':
@@ -153,10 +155,20 @@ Please note ⚠️. Only one person can join if you share it with others who hav
     
     return
 
+update_files()
+
 scheduler = BackgroundScheduler()
 
 
-scheduler.add_job(auto_check, 'interval' , seconds=10)
+scheduler.add_job(auto_check, 'interval' , seconds=30)
+
+
+scheduler.start()
+
+scheduler = BackgroundScheduler()
+
+
+scheduler.add_job(update_files, 'interval' , seconds=60)
 
 
 scheduler.start()
