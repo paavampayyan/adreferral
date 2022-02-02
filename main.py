@@ -144,7 +144,7 @@ Please note ⚠️. Only one person can join if you share it with others who hav
             add_vip(user_id,cat, l.invite_link)
             app.send_message(user_id, f"""Hello! Good news 🎊
 
-15 member joined using your link. Thank you for your efforts
+15 member's joined using your link. Thank you for your efforts
 Here is your reward. Indian Hot Web Series Channel! 🤗😍
 
 Link: {l.invite_link}
