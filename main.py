@@ -117,7 +117,6 @@ def link_count(__, c:CallbackQuery):
 
 def auto_check():
     result = check_approval()
-    count = result[0]
     cat =  result[1]
     user_id = result[2]
     if cat == 'mallu':
