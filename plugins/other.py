@@ -29,7 +29,7 @@ How you can gain access?  🤔
 1. Click the Generate Link button
 2. Copy the generated link and share it with your friends or other adult groups.
 3. Click the Check Status button to track your link.
-4. If 15 members have joined our main channel through your link. We will send you our video channel invitation link soon.
+4. If 15 members have joined our main channel through your link. We will send you our video channel invitation link immideatly.
 
  
 Thank you ❤️**""", 
