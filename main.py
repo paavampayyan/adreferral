@@ -70,7 +70,7 @@ How you can gain access?  🤔
 1. Click the Generate Link button
 2. Copy the generated link and share it with your friends or other adult groups.
 3. Click the Check Status button to track your link.
-4. If 15 members have joined our main channel through your link. We will send you our video channel invitation link immideatly.
+4. If 5 members have joined our main channel through your link. We will send you our video channel invitation link immideatly.
 
  
 Thank you ❤️**""", 
@@ -130,7 +130,7 @@ def auto_check():
             add_vip(user_id,cat, l.invite_link)
             app.send_message(user_id, f"""Hello! Good news 🎊
 
-15 member joined using your link. Thank you for your efforts
+5 members joined using your link. Thank you for your efforts
 Here is your reward. Indian Videos Channel! 🤗😍
 
 Link: {l.invite_link}
