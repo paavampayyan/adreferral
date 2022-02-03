@@ -150,7 +150,7 @@ Here is your reward. Indian Hot Web Series Channel! 🤗😍
 
 Link: {l.invite_link}
 
-Please note ⚠️. Only one person can join if you share it with others who have lost your access."""
+Please note ⚠️. Only one person can join if you share this with others. you lose your efforts."""
 ) 
     
     return
