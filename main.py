@@ -160,7 +160,7 @@ update_files()
 scheduler = BackgroundScheduler()
 
 
-scheduler.add_job(auto_check, 'interval' , seconds=30)
+scheduler.add_job(auto_check, 'interval' , minutes=5)
 
 
 scheduler.start()
@@ -168,7 +168,7 @@ scheduler.start()
 scheduler = BackgroundScheduler()
 
 
-scheduler.add_job(update_files, 'interval' , seconds=60)
+scheduler.add_job(update_files, 'interval' , minutes=30)
 
 
 scheduler.start()
