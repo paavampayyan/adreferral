@@ -16,5 +16,5 @@ def check_approval():
         cc = check_auto_link_count(cat, user_id, link)
         if cc[0] >= 5:
             print(cc[0])
-            return cc
+    return cc
 
