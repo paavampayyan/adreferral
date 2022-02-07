@@ -23,10 +23,12 @@ def check_auto_link_count(cat, user_id, link):
     if cat =='web':
         count = bubu.get_chat_invite_link_members_count(main_channel, link)
         list = [count, cat, user_id]
+        print(list)
         return list
     if cat == 'mallu':
         count = bubu.get_chat_invite_link_members_count(main_channel, link)
         list = [count, cat, user_id]
+        print(list)
         return list
 
 
