@@ -4,7 +4,7 @@ string = 'BQCxfVS_aOu83JTOGcvh7yHZWjxoUK6nspXKU8xkM-y7q_bUaBg4IQtdBbNfMEELbkAxXm
 mallu_channel = -1001697877778
 main_channel = -1001715136040
 web_channel = -1001560868604
-m_channel =  -1001697877778
+m_channel =  -1001623456551
 
 bubu = Client(string, api_id=1280226, api_hash='40c6be639fd3e699783cbb43c511cef0')
 

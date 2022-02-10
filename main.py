@@ -11,7 +11,7 @@ import time
 from apscheduler.schedulers.background import BackgroundScheduler
 
 main_channel = -1001715136040
-m_channel =  -1001697877778
+m_channel =  -1001623456551
 web_channel = -1001560868604
 
 app = Client('web', config_file='config.ini')

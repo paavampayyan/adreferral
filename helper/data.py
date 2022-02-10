@@ -3,7 +3,7 @@ import pymongo
 from assistant import get_channel_status
 
 web_channel = -1001560868604
-m_channel =  -1001697877778
+m_channel =  -1001623456551
 
 myclient = pymongo.MongoClient('mongodb+srv://kannnappan04:kannan123@cluster0.xxc0o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 
