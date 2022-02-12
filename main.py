@@ -1,11 +1,9 @@
-from email.errors import MessageDefect
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 import os
 import time, asyncio
 
-from telegram import Bot
 
 b_channel = -1001705364943
 app = Client('AD',
